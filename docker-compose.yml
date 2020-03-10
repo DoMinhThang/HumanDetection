@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  cv:
+    build: .
+    volumes:
+      - ./src:/opt/human_detection
+      - ./models:/models
+      - ./images:/images
+
